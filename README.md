@@ -29,8 +29,8 @@ This repository hosts the **release builds**. Grab the latest one from the [Rele
 | System | Extensions | Highlights |
 |---|---|---|
 | **NES** | `.nes` | Common mappers plus MMC5, VRC4/6, Namco 163 |
-| **SNES** | `.sfc` `.smc` | SA-1, SuperFX (GSU), DSP-1/2/4 |
-| **Game Boy / Color** | `.gb` `.gbc` | Optional DMG boot ROM (user-supplied) |
+| **SNES** | `.sfc` `.smc` | SA-1, SuperFX (GSU), DSP-1/4 |
+| **Game Boy / Color** | `.gb` `.gbc` | - |
 | **Master System** | `.sms` | YM2413 FM audio |
 | **Mega Drive / Genesis** | `.md` `.gen` `.smd` `.bin` | YM2612 with SSG-EG and LFO |
 | **CHIP-8** | `.ch8` `.c8` `.bin` `.rom` | |
