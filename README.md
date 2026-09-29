@@ -8,6 +8,8 @@
 
 *Wirá* (wee-RAH) means **bird** in Tupi/Nheengatu: a nod to Brazil 🇧🇷 and to Dash, Flutter's bird.
 
+*This project uses AI* 
+
 [![Latest release](https://img.shields.io/github/v/release/willtsan/wire-releases?style=for-the-badge&color=2e8b8b)](https://github.com/willtsan/wire-releases/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/willtsan/wire-releases/total?style=for-the-badge&color=7cb342)](https://github.com/willtsan/wire-releases/releases)
 [![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/willtsan)
