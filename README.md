@@ -32,6 +32,7 @@ This repository hosts the **release builds**. Grab the latest one from the [Rele
 |---|---|---|
 | **NES** | `.nes` | Common mappers plus MMC5, VRC4/6, Namco 163 |
 | **SNES** | `.sfc` `.smc` | SA-1, SuperFX (GSU), DSP-1/4 |
+| **Nintendo 64** | `.z64` `.n64` `.v64` | Up to 2x internal resolution, analog stick, Rumble Pak and Controller Pak, up to four players |
 | **Game Boy / Color** | `.gb` `.gbc` | - |
 | **Game Boy Advance** | `.gba` `.agb` | Built-in BIOS, real BIOS optional |
 | **Master System** | `.sms` | YM2413 FM audio |
@@ -74,7 +75,7 @@ Frontends like **ES-DE**, **Daijisho** or **Beacon** can start a game directly w
 | Package | `com.willtsan.wira` |
 | Activity | `com.willtsan.wira.MainActivity` |
 | Extra `rom` (string) | Absolute file path of the ROM (required) |
-| Extra `core` (string) | Optional: `nes`, `snes`, `gb`, `gbc`, `gba`, `sms`, `gg`, `md`, `ngp`, `chip8` |
+| Extra `core` (string) | Optional: `nes`, `snes`, `n64`, `gb`, `gbc`, `gba`, `sms`, `gg`, `md`, `ngp`, `chip8` |
 
 <details>
 <summary><b>Details and tips</b></summary>
