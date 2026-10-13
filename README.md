@@ -8,7 +8,7 @@
 
 *Wirá* (wee-RAH) means **bird** in Tupi/Nheengatu: a nod to Brazil 🇧🇷 and to Dash, Flutter's bird.
 
-*This project uses AI*
+*Built with AI assistance: see the [disclaimer](#-ai-disclaimer).*
 
 [![Latest release](https://img.shields.io/github/v/release/willtsan/wira-releases?style=for-the-badge&color=2e8b8b)](https://github.com/willtsan/wira-releases/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/willtsan/wira-releases/total?style=for-the-badge&color=7cb342)](https://github.com/willtsan/wira-releases/releases)
@@ -25,6 +25,10 @@
 Wirá plays your favorite classic consoles in one app, with one library. Every emulation core is written from scratch in Dart, so there are no libretro cores and no native emulation code. It runs on **Android** for now, other platforms will come later.
 
 This repository hosts the **release builds**. Grab the latest one from the [Releases page](https://github.com/willtsan/wira-releases/releases/latest).
+
+## 🤖 AI disclaimer
+
+Wirá and its emulation cores are developed with AI assistance for code generation and opcode translation, while the system architecture, debugging, memory layout, and overall project management are fully human-driven.
 
 ## 🎮 Supported systems
 
