@@ -12,9 +12,11 @@
 
 [![Latest release](https://img.shields.io/github/v/release/willtsan/wira-releases?style=for-the-badge&color=2e8b8b)](https://github.com/willtsan/wira-releases/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/willtsan/wira-releases/total?style=for-the-badge&color=7cb342)](https://github.com/willtsan/wira-releases/releases)
+[![Patreon](https://img.shields.io/badge/Patreon-Wir%C3%A1%20Beta-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/cw/wira_emulator)
+[![Discord](https://img.shields.io/badge/Discord-Join-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/7HGbFRed7X)
 [![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/willtsan)
 
-[**⬇️ Download**](https://github.com/willtsan/wira-releases/releases/latest) · [**🐛 Report a bug**](https://github.com/willtsan/wira-releases/issues)
+[**⬇️ Download**](https://github.com/willtsan/wira-releases/releases/latest) · [**🧪 Wirá Beta**](#-wirá-beta) · [**🐛 Report a bug**](https://github.com/willtsan/wira-releases/issues) · [**💬 Discord**](https://discord.gg/7HGbFRed7X)
 
 </div>
 
@@ -25,6 +27,33 @@
 Wirá plays your favorite classic consoles in one app, with one library. Every emulation core is written from scratch in Dart, so there are no libretro cores and no native emulation code. It runs on **Android** for now, other platforms will come later.
 
 This repository hosts the **release builds**. Grab the latest one from the [Releases page](https://github.com/willtsan/wira-releases/releases/latest).
+
+## 🧪 Wirá Beta
+
+The standard Wirá is free, and it will stay free. New features land first in **Wirá Beta**, an early-access build for supporters on [Patreon](https://www.patreon.com/cw/wira_emulator), where they get tested on real devices before they reach everyone.
+
+> [!NOTE]
+> **Everything in the beta comes to the standard version.** Patreon pays for test devices, servers and development time; it doesn't lock features away. When a feature is ready, it ships in the standard Wirá at no cost.
+
+**In the beta right now:**
+
+| | |
+|---|---|
+| 🕹️ **Neo Geo** | Home (AES) and arcade (MVS) boards, picked per game. Needs your own `neogeo.zip` BIOS (`aes.zip` adds the home BIOS). |
+| 🪐 **Sega Saturn** | Early: Virtua Fighter 2 and Sega Rally Championship run at full speed, many other games don't yet. Needs your own `saturn_bios.bin`; plays `.chd`, `.cue` and `.iso`. |
+| 🌐 **Netplay** | Two players on the same Wi-Fi or over the internet, with a room code or from the list of open rooms. Up to four on the Nintendo 64. |
+| ⚡ **Rollback** | On NES, SNES, Mega Drive, Master System and Neo Geo your buttons answer right away, even with the other player far away. Saturn and N64 netplay wait for the other player instead. |
+| 🎮 **Remote controller** | Other phones on your Wi-Fi become controllers for the game on your screen. Only you need the game. |
+
+Some of it is rough: online play connects the phones directly, so it can fail on some mobile networks and strict routers.
+
+**How it works:**
+
+1. Join the beta tier on [Patreon](https://www.patreon.com/cw/wira_emulator).
+2. You get an invite by email from Firebase App Distribution (use an address you check).
+3. Install **Wirá Beta** from Google's App Tester app, which also brings you each new build.
+
+Wirá Beta is a separate app (`com.willtsan.wira.beta`): it installs next to the standard Wirá, with its own library, settings and saves, so testing never touches your main games.
 
 ## 🤖 AI disclaimer
 
@@ -63,7 +92,7 @@ ROMs can also be loaded straight from **`.zip`** archives. Wirá picks the right
 ## 📦 Installation
 
 1. Open the [latest release](https://github.com/willtsan/wira-releases/releases/latest).
-2. Download the build for your platform.
+2. Download the `.apk` (Android 7 or later, 64-bit ARM: practically every phone and handheld of the last years).
 3. Install it, open Wirá, and point it to your ROMs folder.
 
 > [!IMPORTANT]
@@ -127,17 +156,21 @@ Then add a command to the system in ES-DE/custom_systems/es_systems.xml, for exa
 
 Other frontends: use the same am start arguments. Pass the ROM's file path, not its URI.
 
-💬 Feedback
+## 💬 Feedback
 
-Found a bug or a game that doesn't run right? Open an issue (https://github.com/willtsan/wira-releases/issues) and include the system, the game name and what you expected to happen.
+Found a bug or a game that doesn't run right? [Open an issue](https://github.com/willtsan/wira-releases/issues) and include the system, the game name and what you expected to happen. Or come say it on [Discord](https://discord.gg/7HGbFRed7X), where beta news, requests and chat happen too.
 
-☕ Support
+## 💚 Support
 
-If you enjoy Wirá, you can buy me a coffee (https://buymeacoffee.com/willtsan). Thank you! 💚
+Wirá is made in spare time. If you enjoy it:
+
+- **[Patreon](https://www.patreon.com/cw/wira_emulator)**: support it monthly and get [Wirá Beta](#-wirá-beta).
+- **[Buy me a coffee](https://buymeacoffee.com/willtsan)**: a one-off thank you.
+
+Using the standard version and reporting bugs helps just as much. Thank you! 💚
 
 ---
 
 <div align="center">
 <sub>Made with 💙 in Portugal by a brazilian, using Flutter.</sub>
 </div>
-```
