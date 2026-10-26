@@ -39,7 +39,6 @@ The standard Wirá is free, and it will stay free. New features land first in **
 
 | | |
 |---|---|
-| 🕹️ **Neo Geo** | Home (AES) and arcade (MVS) boards, picked per game. Needs your own `neogeo.zip` BIOS (`aes.zip` adds the home BIOS). |
 | 🪐 **Sega Saturn** | Early: Virtua Fighter 2 and Sega Rally Championship run at full speed, many other games don't yet. Needs your own `saturn_bios.bin`; plays `.chd`, `.cue` and `.iso`. |
 | 🌐 **Netplay** | Two players on the same Wi-Fi or over the internet, with a room code or from the list of open rooms. Up to four on the Nintendo 64. |
 | ⚡ **Rollback** | On NES, SNES, Mega Drive, Master System and Neo Geo your buttons answer right away, even with the other player far away. Saturn and N64 netplay wait for the other player instead. |
@@ -71,6 +70,7 @@ Wirá and its emulation cores are developed with AI assistance for code generati
 | **Master System** | `.sms` | YM2413 FM audio |
 | **Game Gear** | `.gg` | Stereo sound |
 | **Mega Drive / Genesis** | `.md` `.gen` `.smd` `.bin` | YM2612 with SSG-EG and LFO, 6-button pad, PAL games at 50 Hz |
+| **Neo Geo** | `.neo` | Home (AES) and arcade (MVS) boards, picked per game; protected games like Garou, Metal Slug 3/5 and KOF 98-2003 |
 | **Neo Geo Pocket / Color** | `.ngp` `.ngc` `.npc` `.ngpc` | Built-in BIOS, sampled voices, C/D buttons for strong attacks |
 | **CHIP-8** | `.ch8` `.c8` `.bin` `.rom` | |
 
@@ -97,7 +97,7 @@ ROMs can also be loaded straight from **`.zip`** archives. Wirá picks the right
 
 > [!IMPORTANT]
 > Wirá does **not** include any ROMs or BIOS files. Please use your own legally obtained copies.
-> No BIOS is required: Game Boy Advance and Neo Geo Pocket use a built-in replacement. For Game Boy Advance you can optionally put your own `gba_bios.bin` in Wirá's `bios` folder.
+> Only Neo Geo needs a BIOS: your own `neogeo.zip` (arcade) or `aes.zip` (home console). Game Boy Advance and Neo Geo Pocket use a built-in replacement; for Game Boy Advance you can optionally use your own `gba_bios.bin`. Add BIOS files with **Import BIOS** in Wirá's system settings, or put them in its `bios` folder.
 
 ## 🚀 Launching from other apps (Android)
 
@@ -108,7 +108,7 @@ Frontends like **ES-DE**, **Daijisho** or **Beacon** can start a game directly w
 | Package | `com.willtsan.wira` |
 | Activity | `com.willtsan.wira.MainActivity` |
 | Extra `rom` (string) | Absolute file path of the ROM (required) |
-| Extra `core` (string) | Optional: `nes`, `snes`, `n64`, `gb`, `gbc`, `gba`, `sms`, `gg`, `md`, `ngp`, `chip8` |
+| Extra `core` (string) | Optional: `nes`, `snes`, `n64`, `gb`, `gbc`, `gba`, `sms`, `gg`, `md`, `neo`, `ngp`, `chip8` |
 
 <details>
 <summary><b>Details and tips</b></summary>
