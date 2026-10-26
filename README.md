@@ -22,6 +22,23 @@
 
 ---
 
+## 📸 Screenshots
+
+<table>
+<tr>
+<td width="50%"><img src="screenshot0.jpeg" alt="Welcome screen: continue playing, recent games and your stats"><br><sub>Welcome screen: continue playing, recent games and your stats</sub></td>
+<td width="50%"><img src="screenshot1.jpeg" alt="Library lanes: Playing, Up next, Random picks and more"><br><sub>Library lanes: Playing, Up next, Random picks and more</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="screenshot2.jpeg" alt="Game page with RetroAchievements"><br><sub>Game page with RetroAchievements</sub></td>
+<td width="50%"><img src="screenshot3.jpeg" alt="Type to find, made for a gamepad"><br><sub>Type to find, made for a gamepad</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="screenshot4.jpeg" alt="In-game menu: save states, speed, manual"><br><sub>In-game menu: save states, speed, manual</sub></td>
+<td width="50%"><img src="screenshot5.jpeg" alt="Touch layout editor"><br><sub>Touch layout editor</sub></td>
+</tr>
+</table>
+
 ## ✨ What is Wirá?
 
 Wirá plays your favorite classic consoles in one app, with one library. Every emulation core is written from scratch in Dart, so there are no libretro cores and no native emulation code. It runs on **Android** for now, other platforms will come later.
