@@ -56,12 +56,15 @@ The standard Wirá is free, and it will stay free. New features land first in **
 
 | | |
 |---|---|
-| 🪐 **Sega Saturn** | Early: Virtua Fighter 2 and Sega Rally Championship run at full speed, many other games don't yet. Needs your own `saturn_bios.bin`; plays `.chd`, `.cue` and `.iso`. |
+| 🪐 **Sega Saturn** | Early, but growing fast. Virtua Fighter 2 and Sega Rally Championship run at full speed, and Mega Man 8, Marvel Super Heroes vs. Street Fighter, Die Hard Arcade, Virtua Fighter Remix and Mega Man X4 play too. New in beta 8: Tomb Raider, Akumajou Dracula X, Croc, Doom and Independence Day.<br>**Sound and picture:** CD audio, the sound chip's reverb and effects, hi-res and interlaced modes, and PAL games at 50 Hz.<br>**Saves:** games keep their saves in the console's backup memory, and save states work.<br>**Extras:** two players, and netplay with a friend. The 4 MB RAM cartridge is always plugged in for the Capcom and SNK fighters that need it, and games that came with a ROM cartridge (The King of Fighters '95, Ultraman) find it in the bios folder. Light gun games like Virtua Cop aim with a touch. Multi-disc games ask which disc to load, and RetroAchievements work.<br>Many games don't run yet, and 3D-heavy ones want a recent phone. Needs your own `saturn_bios.bin`; plays `.chd`, `.cue` and `.iso`. |
+| 🕹️ **PC Engine / TurboGrafx-16** | HuCard games (`.pce`), Japanese and US cards alike, for one or two players. No CD-ROM² or SuperGrafx games yet. |
+| 👾 **Atari 2600** | `.a26` and `.bin` cartridges with F8, F6 and F4 bank switching, joystick or paddles per game, and the console's switches on the pad. |
+| 🔺 **N64 on Vulkan** | Draws Nintendo 64 games on the GPU instead of the CPU, at up to 4x the console's resolution. Needs a Vulkan 1.1 GPU. |
 | 🌐 **Netplay** | Two players on the same Wi-Fi or over the internet, with a room code or from the list of open rooms. Up to four on the Nintendo 64. |
 | ⚡ **Rollback** | On NES, SNES, Mega Drive, Master System and Neo Geo your buttons answer right away, even with the other player far away. Saturn and N64 netplay wait for the other player instead. |
 | 🎮 **Remote controller** | Other phones on your Wi-Fi become controllers for the game on your screen. Only you need the game. |
 
-Some of it is rough: online play connects the phones directly, so it can fail on some mobile networks and strict routers.
+Some of it is rough: Saturn is early, and online play connects the phones directly, so it can fail on some mobile networks and strict routers.
 
 **How it works:**
 
