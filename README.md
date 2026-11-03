@@ -14,6 +14,7 @@
 [![Downloads](https://img.shields.io/github/downloads/willtsan/wira-releases/total?style=for-the-badge&color=7cb342)](https://github.com/willtsan/wira-releases/releases)
 [![Patreon](https://img.shields.io/badge/Patreon-Wir%C3%A1%20Beta-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/cw/wira_emulator)
 [![Discord](https://img.shields.io/badge/Discord-Join-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/7HGbFRed7X)
+[![X](https://img.shields.io/badge/X-@wiraemulator-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/wiraemulator)
 [![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/willtsan)
 
 [**⬇️ Download**](https://github.com/willtsan/wira-releases/releases/latest) · [**🧪 Wirá Beta**](#-wirá-beta) · [**🐛 Report a bug**](https://github.com/willtsan/wira-releases/issues) · [**💬 Discord**](https://discord.gg/7HGbFRed7X)
@@ -56,15 +57,14 @@ The standard Wirá is free, and it will stay free. New features land first in **
 
 | | |
 |---|---|
-| 🪐 **Sega Saturn** | Early, but growing fast. Virtua Fighter 2 and Sega Rally Championship run at full speed, and Mega Man 8, Marvel Super Heroes vs. Street Fighter, Die Hard Arcade, Virtua Fighter Remix and Mega Man X4 play too. New in beta 8: Tomb Raider, Akumajou Dracula X, Croc, Doom and Independence Day.<br>**Sound and picture:** CD audio, the sound chip's reverb and effects, hi-res and interlaced modes, and PAL games at 50 Hz.<br>**Saves:** games keep their saves in the console's backup memory, and save states work.<br>**Extras:** two players, and netplay with a friend. The 4 MB RAM cartridge is always plugged in for the Capcom and SNK fighters that need it, and games that came with a ROM cartridge (The King of Fighters '95, Ultraman) find it in the bios folder. Light gun games like Virtua Cop aim with a touch. Multi-disc games ask which disc to load, and RetroAchievements work.<br>Many games don't run yet, and 3D-heavy ones want a recent phone. Needs your own `saturn_bios.bin`; plays `.chd`, `.cue` and `.iso`. |
-| 🕹️ **PC Engine / TurboGrafx-16** | HuCard games (`.pce`), Japanese and US cards alike, for one or two players. No CD-ROM² or SuperGrafx games yet. |
-| 👾 **Atari 2600** | `.a26` and `.bin` cartridges with F8, F6 and F4 bank switching, joystick or paddles per game, and the console's switches on the pad. |
-| 🔺 **N64 on Vulkan** | Draws Nintendo 64 games on the GPU instead of the CPU, at up to 4x the console's resolution. Needs a Vulkan 1.1 GPU. |
-| 🌐 **Netplay** | Two players on the same Wi-Fi or over the internet, with a room code or from the list of open rooms. Up to four on the Nintendo 64. |
+| 🪐 **Sega Saturn** | Most of the library plays, from Virtua Fighter 2 and Sega Rally to Mega Man X4, Tomb Raider and Doom. CD audio, save states, two players, netplay, light guns and RetroAchievements work. 3D-heavy games needs a recent phone. Needs your own `saturn_bios.bin`; plays `.chd`, `.cue` and `.iso`. |
+| 🕹️ **PC Engine / TurboGrafx-16** | HuCard games (`.pce`), Japanese and US cards alike, for one or two players.<br>**CD-ROM² and Super CD-ROM²** games (`.chd`, `.cue`) too, with CD music and ADPCM voices; they need your own Super System Card 3.0. Arcade Card games run only where they also work without it, multi-disc games can't swap discs yet, and SuperGrafx games aren't supported. |
+| 🔺 **N64 on Vulkan** | Draws Nintendo 64 games on the GPU instead of the CPU, at 1x or 2x the console's resolution. Needs a Vulkan 1.1 GPU. |
+| 🌐 **Netplay** | Two players on the same Wi-Fi or over the internet, with a room code or from the list of open rooms. Up to four on the Nintendo 64.<br>**Host a game** from your library and others join it. Games on your Wi-Fi show their box art, the host's name and whether you have the game, and the ones you can join come first. If nobody shows up, Wirá explains the usual causes and lets you join by address (IPv6 too). |
 | ⚡ **Rollback** | On NES, SNES, Mega Drive, Master System and Neo Geo your buttons answer right away, even with the other player far away. Saturn and N64 netplay wait for the other player instead. |
 | 🎮 **Remote controller** | Other phones on your Wi-Fi become controllers for the game on your screen. Only you need the game. |
 
-Some of it is rough: Saturn is early, and online play connects the phones directly, so it can fail on some mobile networks and strict routers.
+Some of it is rough: online play connects the phones directly, so it can fail on some mobile networks and strict routers.
 
 **How it works:**
 
@@ -92,17 +92,20 @@ Wirá and its emulation cores are developed with AI assistance for code generati
 | **Mega Drive / Genesis** | `.md` `.gen` `.smd` `.bin` | YM2612 with SSG-EG and LFO, 6-button pad, PAL games at 50 Hz |
 | **Neo Geo** | `.neo` | Home (AES) and arcade (MVS) boards, picked per game; protected games like Garou, Metal Slug 3/5 and KOF 98-2003 |
 | **Neo Geo Pocket / Color** | `.ngp` `.ngc` `.npc` `.ngpc` | Built-in BIOS, sampled voices, C/D buttons for strong attacks |
+| **Atari 2600** | `.a26` `.bin` | Nearly every cartridge type, Pitfall II and Supercharger games included; joystick, paddles, driving, keypad and light gun; NTSC, PAL and SECAM |
 | **CHIP-8** | `.ch8` `.c8` `.bin` `.rom` | |
 
 ROMs can also be loaded straight from **`.zip`** archives. Wirá picks the right system from the ROM header, or from the file extension.
 
 ## 🌟 Features
 
+- 🏠 **A home screen of your own**: arrange widgets like recent games, stats, a clock and battery, or other apps' widgets. On Android, Wirá can be your device's home screen (Launcher), with an app drawer
 - 📚 **Game library** with list, grid and carousel views, plus box art from libretro thumbnails and ScreenScraper
+- 🌍 **One entry per game**: regions and revisions are grouped under your preferred region; hide the games you don't want to see
 - 📦 **3D boxes**, with a generated cover for games that have no scraped art
 - 🖼️ **Game details** with every scraped image and manual: replace or remove any of them by hand
 - 🏆 **RetroAchievements**, with an in-game Help screen based on rich presence
-- 💾 **Save states** and battery saves
+- 💾 **Save states** and battery saves, with Continue on a game's page to pick up where you left off
 - 👆 **Touch controls** with customisable layouts; slide your finger across buttons to run and jump
 - 📺 **Screen filters**: CRT shader, scanlines, LCD grid, Eagle, sharp bilinear
 - ⚡ **Run-ahead** to reduce input lag
@@ -128,7 +131,7 @@ Frontends like **ES-DE**, **Daijisho** or **Beacon** can start a game directly w
 | Package | `com.willtsan.wira` |
 | Activity | `com.willtsan.wira.MainActivity` |
 | Extra `rom` (string) | Absolute file path of the ROM (required) |
-| Extra `core` (string) | Optional: `nes`, `snes`, `n64`, `gb`, `gbc`, `gba`, `sms`, `gg`, `md`, `neo`, `ngp`, `chip8` |
+| Extra `core` (string) | Optional: `nes`, `snes`, `n64`, `gb`, `gbc`, `gba`, `sms`, `gg`, `md`, `neo`, `ngp`, `a26`, `chip8` |
 
 <details>
 <summary><b>Details and tips</b></summary>
