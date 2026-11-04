@@ -10,6 +10,7 @@
 
 *Built with AI assistance: see the [disclaimer](#-ai-disclaimer).*
 
+[![Website](https://img.shields.io/badge/Website-wira-2e8b8b?style=for-the-badge&logo=googlechrome&logoColor=white)](https://willtsan.github.io/wira-site/)
 [![Latest release](https://img.shields.io/github/v/release/willtsan/wira-releases?style=for-the-badge&color=2e8b8b)](https://github.com/willtsan/wira-releases/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/willtsan/wira-releases/total?style=for-the-badge&color=7cb342)](https://github.com/willtsan/wira-releases/releases)
 [![Patreon](https://img.shields.io/badge/Patreon-Wir%C3%A1%20Beta-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/cw/wira_emulator)
@@ -17,101 +18,33 @@
 [![X](https://img.shields.io/badge/X-@wiraemulator-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/wiraemulator)
 [![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/willtsan)
 
-[**⬇️ Download**](https://github.com/willtsan/wira-releases/releases/latest) · [**🧪 Wirá Beta**](#-wirá-beta) · [**🐛 Report a bug**](https://github.com/willtsan/wira-releases/issues) · [**💬 Discord**](https://discord.gg/7HGbFRed7X)
+[**🌐 Website**](https://willtsan.github.io/wira-site/) · [**⬇️ Download**](https://github.com/willtsan/wira-releases/releases/latest) · [**🎮 Compatibility**](https://willtsan.github.io/wira-site/compatibility/) · [**🐛 Report a bug**](https://github.com/willtsan/wira-releases/issues) · [**💬 Discord**](https://discord.gg/7HGbFRed7X)
 
 </div>
 
 ---
 
-## 📸 Screenshots
+## ✨ What is Wirá?
+
+Wirá plays your favorite classic consoles in one app, with one library. Every emulation core is written from scratch in Dart, so there are no libretro cores and no native emulation code. It runs on **Android** for now, other platforms will come later.
+
+This repository hosts the **release builds**. Everything else lives on the **[website](https://willtsan.github.io/wira-site/)** ([em português](https://willtsan.github.io/wira-site/pt-br/)):
+
+| | |
+|---|---|
+| 🎮 **[Systems](https://willtsan.github.io/wira-site/systems/)** | Every system Wirá emulates: file types, BIOS needs and what each core supports |
+| ✅ **[Compatibility](https://willtsan.github.io/wira-site/compatibility/)** | How games run, system by system. Played something? [Report a game](https://github.com/willtsan/wira-releases/issues/new?template=compat.yml&title=%5BCompat%5D%20) |
+| ⬇️ **[Download](https://willtsan.github.io/wira-site/download/)** | The latest build with its checksum, every release, and how to join Wirá Beta |
+| 📰 **[News](https://willtsan.github.io/wira-site/news/)** | Release notes and announcements |
 
 <table>
 <tr>
 <td width="50%"><img src="screenshot0.jpeg" alt="Welcome screen: continue playing, recent games and your stats"><br><sub>Welcome screen: continue playing, recent games and your stats</sub></td>
 <td width="50%"><img src="screenshot1.jpeg" alt="Library lanes: Playing, Up next, Random picks and more"><br><sub>Library lanes: Playing, Up next, Random picks and more</sub></td>
 </tr>
-<tr>
-<td width="50%"><img src="screenshot2.jpeg" alt="Game page with RetroAchievements"><br><sub>Game page with RetroAchievements</sub></td>
-<td width="50%"><img src="screenshot3.jpeg" alt="Type to find, made for a gamepad"><br><sub>Type to find, made for a gamepad</sub></td>
-</tr>
-<tr>
-<td width="50%"><img src="screenshot4.jpeg" alt="In-game menu: save states, speed, manual"><br><sub>In-game menu: save states, speed, manual</sub></td>
-<td width="50%"><img src="screenshot5.jpeg" alt="Touch layout editor"><br><sub>Touch layout editor</sub></td>
-</tr>
 </table>
 
-## ✨ What is Wirá?
-
-Wirá plays your favorite classic consoles in one app, with one library. Every emulation core is written from scratch in Dart, so there are no libretro cores and no native emulation code. It runs on **Android** for now, other platforms will come later.
-
-This repository hosts the **release builds**. Grab the latest one from the [Releases page](https://github.com/willtsan/wira-releases/releases/latest).
-
-## 🧪 Wirá Beta
-
-The standard Wirá is free, and it will stay free. New features land first in **Wirá Beta**, an early-access build for supporters on [Patreon](https://www.patreon.com/cw/wira_emulator), where they get tested on real devices before they reach everyone.
-
-> [!NOTE]
-> **Everything in the beta comes to the standard version.** Patreon pays for test devices, servers and development time; it doesn't lock features away. When a feature is ready, it ships in the standard Wirá at no cost.
-
-**In the beta right now:**
-
-| | |
-|---|---|
-| 🪐 **Sega Saturn** | Most of the library plays, from Virtua Fighter 2 and Sega Rally to Mega Man X4, Tomb Raider and Doom. CD audio, save states, two players, netplay, light guns and RetroAchievements work. 3D-heavy games needs a recent phone. Needs your own `saturn_bios.bin`; plays `.chd`, `.cue` and `.iso`. |
-| 💿 **PlayStation** | New: games play with movies, CD music and reverb. DualShock with both sticks and rumble, memory card saves, and Change disc for multi-disc games. Needs your own PS1 BIOS (like `scph1001.bin`); plays `.chd` and `.cue`. Memory card 2, multitap, light guns and `.pbp` aren't supported yet. |
-| 🕹️ **PC Engine / TurboGrafx-16** | HuCard games (`.pce`), Japanese and US cards alike, for one or two players.<br>**CD-ROM² and Super CD-ROM²** games (`.chd`, `.cue`) too, with CD music and ADPCM voices; they need your own Super System Card 3.0. Arcade Card games run only where they also work without it, multi-disc games can't swap discs yet, and SuperGrafx games aren't supported. |
-| 🔺 **N64 on Vulkan** | Draws Nintendo 64 games on the GPU instead of the CPU, at 1x or 2x the console's resolution. Needs a Vulkan 1.1 GPU. |
-| 🌐 **Netplay** | Two players on the same Wi-Fi or over the internet, with a room code or from the list of open rooms. Up to four on the Nintendo 64.<br>**Host a game** from your library and others join it. Games on your Wi-Fi show their box art, the host's name and whether you have the game, and the ones you can join come first. If nobody shows up, Wirá explains the usual causes and lets you join by address (IPv6 too). |
-| ⚡ **Rollback** | On NES, SNES, Mega Drive, Master System and Neo Geo your buttons answer right away, even with the other player far away. Saturn and N64 netplay wait for the other player instead. |
-| 🎮 **Remote controller** | Other phones on your Wi-Fi become controllers for the game on your screen. Only you need the game. |
-
-Some of it is rough: online play connects the phones directly, so it can fail on some mobile networks and strict routers.
-
-**How it works:**
-
-1. Join the beta tier on [Patreon](https://www.patreon.com/cw/wira_emulator).
-2. You get an invite by email from Firebase App Distribution (use an address you check).
-3. Install **Wirá Beta** from Google's App Tester app, which also brings you each new build.
-
-Wirá Beta is a separate app (`com.willtsan.wira.beta`): it installs next to the standard Wirá, with its own library, settings and saves, so testing never touches your main games.
-
-## 🤖 AI disclaimer
-
-Wirá and its emulation cores are developed with AI assistance for code generation and opcode translation, while the system architecture, debugging, memory layout, and overall project management are fully human-driven.
-
-## 🎮 Supported systems
-
-| System | Extensions | Highlights |
-|---|---|---|
-| **NES** | `.nes` | Common mappers plus MMC5, VRC4/6, Namco 163 |
-| **SNES** | `.sfc` `.smc` | SA-1, SuperFX (GSU), DSP-1/4 |
-| **Nintendo 64** | `.z64` `.n64` `.v64` | Up to 2x internal resolution, analog stick, Rumble Pak and Controller Pak, up to four players |
-| **Game Boy / Color** | `.gb` `.gbc` | - |
-| **Game Boy Advance** | `.gba` `.agb` | Built-in BIOS, real BIOS optional |
-| **Master System** | `.sms` | YM2413 FM audio |
-| **Game Gear** | `.gg` | Stereo sound |
-| **Mega Drive / Genesis** | `.md` `.gen` `.smd` `.bin` | YM2612 with SSG-EG and LFO, 6-button pad, PAL games at 50 Hz |
-| **Neo Geo** | `.neo` | Home (AES) and arcade (MVS) boards, picked per game; protected games like Garou, Metal Slug 3/5 and KOF 98-2003 |
-| **Neo Geo Pocket / Color** | `.ngp` `.ngc` `.npc` `.ngpc` | Built-in BIOS, sampled voices, C/D buttons for strong attacks |
-| **Atari 2600** | `.a26` `.bin` | Nearly every cartridge type, Pitfall II and Supercharger games included; joystick, paddles, driving, keypad and light gun; NTSC, PAL and SECAM |
-| **CHIP-8** | `.ch8` `.c8` `.bin` `.rom` | |
-
-ROMs can also be loaded straight from **`.zip`** archives. Wirá picks the right system from the ROM header, or from the file extension.
-
-## 🌟 Features
-
-- 🏠 **A home screen of your own**: arrange widgets like recent games, stats, a clock and battery, or other apps' widgets. On Android, Wirá can be your device's home screen (Launcher), with an app drawer
-- 📚 **Game library** with list, grid and carousel views, plus box art from libretro thumbnails and ScreenScraper
-- 🌍 **One entry per game**: regions and revisions are grouped under your preferred region; hide the games you don't want to see
-- 📦 **3D boxes**, with a generated cover for games that have no scraped art
-- 🖼️ **Game details** with every scraped image and manual: replace or remove any of them by hand
-- 🏆 **RetroAchievements**, with an in-game Help screen based on rich presence
-- 💾 **Save states** and battery saves, with Continue on a game's page to pick up where you left off
-- 👆 **Touch controls** with customisable layouts; slide your finger across buttons to run and jump
-- 📺 **Screen filters**: CRT shader, scanlines, LCD grid, Eagle, sharp bilinear
-- ⚡ **Run-ahead** to reduce input lag
-- 📊 **Play statistics** per game and per system
-- 🚀 **Frontend-friendly** on Android: launch games from ES-DE, Daijisho, Beacon and more
+More screenshots and the full feature list are on the [website](https://willtsan.github.io/wira-site/).
 
 ## 📦 Installation
 
@@ -120,8 +53,18 @@ ROMs can also be loaded straight from **`.zip`** archives. Wirá picks the right
 3. Install it, open Wirá, and point it to your ROMs folder.
 
 > [!IMPORTANT]
-> Wirá does **not** include any ROMs or BIOS files. Please use your own legally obtained copies.
-> Only Neo Geo needs a BIOS: your own `neogeo.zip` (arcade) or `aes.zip` (home console). Game Boy Advance and Neo Geo Pocket use a built-in replacement; for Game Boy Advance you can optionally use your own `gba_bios.bin`. Add BIOS files with **Import BIOS** in Wirá's system settings, or put them in its `bios` folder.
+> Wirá does **not** include any ROMs or BIOS files. Please use your own legally obtained copies. Each system's page on the [website](https://willtsan.github.io/wira-site/systems/) says which BIOS it needs, if any. Add BIOS files with **Import BIOS** in Wirá's system settings, or put them in its `bios` folder.
+
+## 🧪 Wirá Beta
+
+The standard Wirá is free, and it will stay free. New features land first in **Wirá Beta**, an early-access build for supporters on [Patreon](https://www.patreon.com/cw/wira_emulator).
+
+> [!NOTE]
+> **Everything in the beta comes to the standard version.** Patreon pays for test devices, servers and development time; it doesn't lock features away.
+
+**In the beta right now:** 🪐 [Sega Saturn](https://willtsan.github.io/wira-site/systems/saturn/) · 💿 [PlayStation](https://willtsan.github.io/wira-site/systems/ps1/) · 🕹️ [PC Engine CD-ROM²](https://willtsan.github.io/wira-site/systems/pce/) · 🔺 N64 on Vulkan · 🌐 Netplay over Wi-Fi or the internet · ⚡ Rollback on NES, SNES, Mega Drive, Master System and Neo Geo · 🎮 Other phones as remote controllers.
+
+[How to join](https://willtsan.github.io/wira-site/download/#beta): join the beta tier on Patreon, accept the Firebase App Distribution invite by email, and install Wirá Beta from Google's App Tester app. It's a separate app (`com.willtsan.wira.beta`) with its own library, settings and saves.
 
 ## 🚀 Launching from other apps (Android)
 
@@ -138,7 +81,7 @@ Frontends like **ES-DE**, **Daijisho** or **Beacon** can start a game directly w
 <summary><b>Details and tips</b></summary>
 
 - **Data URI:** instead of the `rom` extra, the path can be the Intent's data URI (`-d /path/rom.sfc` or `file:///path/rom.sfc`).
-- **`core` extra:** case-insensitive. Any extension from the systems table also works (`sfc`, `smc`, `gen`, `ngc` and so on). If it's missing, unknown, or shared by two systems (`bin`), the system is detected from the ROM.
+- **`core` extra:** case-insensitive. Any extension a system opens also works (`sfc`, `smc`, `gen`, `ngc` and so on). If it's missing, unknown, or shared by two systems (`bin`), the system is detected from the ROM.
 - **Real paths only:** `content://` URIs aren't supported. Grant Wirá "All files access" once, from the app or Android settings.
 - **While a game is running:** a new launch replaces the current game instead of opening a second copy of the app.
 - **Exit:** choosing Exit in the game menu closes Wirá and returns to the frontend.
@@ -147,7 +90,6 @@ Frontends like **ES-DE**, **Daijisho** or **Beacon** can start a game directly w
 
 <details>
 <summary><b>Test from a computer (adb)</b></summary>
-
 
 ```sh
 adb shell am start -n com.willtsan.wira/.MainActivity \
@@ -182,7 +124,13 @@ Other frontends: use the same am start arguments. Pass the ROM's file path, not 
 
 ## 💬 Feedback
 
-Found a bug or a game that doesn't run right? [Open an issue](https://github.com/willtsan/wira-releases/issues) and include the system, the game name and what you expected to happen. Or come say it on [Discord](https://discord.gg/7HGbFRed7X), where beta news, requests and chat happen too.
+- **A game runs well or badly?** [Report it](https://github.com/willtsan/wira-releases/issues/new?template=compat.yml&title=%5BCompat%5D%20) for the [compatibility list](https://willtsan.github.io/wira-site/compatibility/).
+- **Found a bug?** [Open an issue](https://github.com/willtsan/wira-releases/issues) with the system, the game and what you expected to happen.
+- **Just want to chat?** Come to [Discord](https://discord.gg/7HGbFRed7X), where beta news and requests happen too.
+
+## 🤖 AI disclaimer
+
+Wirá and its emulation cores are developed with AI assistance for code generation and opcode translation, while the system architecture, debugging, memory layout, and overall project management are fully human-driven.
 
 ## 💚 Support
 
