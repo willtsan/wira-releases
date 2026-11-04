@@ -62,9 +62,7 @@ The standard Wirá is free, and it will stay free. New features land first in **
 > [!NOTE]
 > **Everything in the beta comes to the standard version.** Patreon pays for test devices, servers and development time; it doesn't lock features away.
 
-**In the beta right now:** 🪐 [Sega Saturn](https://willtsan.github.io/wira-site/systems/saturn/) · 💿 [PlayStation](https://willtsan.github.io/wira-site/systems/ps1/) · 🕹️ [PC Engine CD-ROM²](https://willtsan.github.io/wira-site/systems/pce/) · 🔺 N64 on Vulkan · 🌐 Netplay over Wi-Fi or the internet · ⚡ Rollback on NES, SNES, Mega Drive, Master System and Neo Geo · 🎮 Other phones as remote controllers.
-
-[How to join](https://willtsan.github.io/wira-site/download/#beta): join the beta tier on Patreon, accept the Firebase App Distribution invite by email, and install Wirá Beta from Google's App Tester app. It's a separate app (`com.willtsan.wira.beta`) with its own library, settings and saves.
+**[See what's in the beta right now](https://willtsan.github.io/wira-site/download/#beta-features)**: Sega Saturn, PlayStation, PC Engine CD-ROM², N64 on Vulkan, netplay, rollback and more. The same page explains [how to join](https://willtsan.github.io/wira-site/download/#beta).
 
 ## 🚀 Launching from other apps (Android)
 
