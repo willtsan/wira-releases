@@ -26,7 +26,7 @@
 
 ## ✨ What is Wirá?
 
-Wirá plays your favorite classic consoles in one app, with one library. Every emulation core is written from scratch in Dart, so there are no libretro cores and no native emulation code. It runs on **Android** for now, other platforms will come later.
+Wirá plays your favorite classic consoles in one app, with one library. Every emulation core is written from scratch in Dart, so there are no libretro cores. It runs on **Android** for now, other platforms will come later.
 
 This repository hosts the **release builds**. Everything else lives on the **[website](https://willtsan.github.io/wira-site/)** ([em português](https://willtsan.github.io/wira-site/pt-br/)):
 
