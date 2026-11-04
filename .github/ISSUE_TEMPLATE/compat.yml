@@ -1,0 +1,71 @@
+name: Game compatibility report
+description: Tell us how a game runs. Approved reports appear on the website's compatibility list.
+title: "[Compat] "
+labels: [compat-report]
+body:
+  - type: dropdown
+    id: system
+    attributes:
+      label: System
+      # Must match `name` in wira-site/src/data/systems.yaml
+      options:
+        - NES
+        - SNES
+        - Nintendo 64
+        - Game Boy / Color
+        - Game Boy Advance
+        - Master System
+        - Game Gear
+        - Mega Drive / Genesis
+        - Neo Geo
+        - Neo Geo Pocket / Color
+        - Atari 2600
+        - CHIP-8
+        - PC Engine / TurboGrafx-16
+        - Sega Saturn
+        - PlayStation
+    validations:
+      required: true
+  - type: input
+    id: game
+    attributes:
+      label: Game
+      placeholder: Chrono Trigger
+    validations:
+      required: true
+  - type: input
+    id: region
+    attributes:
+      label: Region
+      placeholder: USA, Europe, Japan…
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      description: "Perfect: no known issues · Playable: minor glitches · In-game: serious problems · Menu: title/menus only · Boots: shows something, then stops · Nothing: black screen or crash"
+      options:
+        - Perfect
+        - Playable
+        - In-game
+        - Menu
+        - Boots
+        - Nothing
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Wirá version
+      placeholder: 0.5.7
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      placeholder: Retroid Pocket 5
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: What works, what doesn't. Screenshots welcome.
