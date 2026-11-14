@@ -62,7 +62,7 @@ The standard Wirá is free, and it will stay free. New features land first in **
 > [!NOTE]
 > **Everything in the beta comes to the standard version.** Patreon pays for test devices, servers and development time; it doesn't lock features away.
 
-**[See what's in the beta right now](https://willtsan.github.io/wira-site/download/#beta-features)**: Sega Saturn, PlayStation, PC Engine CD-ROM², N64 on Vulkan, netplay, rollback and more. The same page explains [how to join](https://willtsan.github.io/wira-site/download/#beta).
+**[See what's in the beta right now](https://willtsan.github.io/wira-site/download/#beta-features)**: PlayStation, PC Engine CD-ROM² and N64 on Vulkan. The same page explains [how to join](https://willtsan.github.io/wira-site/download/#beta).
 
 ## 🚀 Launching from other apps (Android)
 
@@ -79,7 +79,8 @@ Frontends like **ES-DE**, **Daijisho** or **Beacon** can start a game directly w
 <summary><b>Details and tips</b></summary>
 
 - **Data URI:** instead of the `rom` extra, the path can be the Intent's data URI (`-d /path/rom.sfc` or `file:///path/rom.sfc`).
-- **`core` extra:** case-insensitive. Any extension a system opens also works (`sfc`, `smc`, `gen`, `ngc` and so on). If it's missing, unknown, or shared by two systems (`bin`), the system is detected from the ROM.
+- **`core` extra:** case-insensitive. Any extension a system opens also works (`sfc`, `smc`, `gen`, `ngc` and so on). If it's missing, unknown, or shared by two systems (`bin`, `chd`, `cue`), the system is detected from the ROM.
+- **Disc games:** Saturn (and, in the beta, PlayStation and PC Engine CD-ROM²) are detected from the disc, so leave `core` out. Point `rom` at the `.chd` or `.cue`.
 - **Real paths only:** `content://` URIs aren't supported. Grant Wirá "All files access" once, from the app or Android settings.
 - **While a game is running:** a new launch replaces the current game instead of opening a second copy of the app.
 - **Exit:** choosing Exit in the game menu closes Wirá and returns to the frontend.
